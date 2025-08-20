@@ -1,3 +1,27 @@
+/* Center navbar menu on large screens */
+.navbar {
+    justify-content: center !important;
+}
+/* Custom Navbar Toggler Button Style */
+.navbar-toggler {
+    border: none;
+    background: #FF0000;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 24px;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.navbar-toggler:focus, .navbar-toggler:hover {
+    background: #c20000;
+    color: #fff;
+    outline: none;
+}
+.navbar-toggler .fa-bars {
+    font-size: 24px;
+    color: #fff;
+}
 html, body {
     overflow-x: hidden !important;
     width: 100vw;
@@ -86,6 +110,15 @@ header{
 .ig-manu .active{
     color: #FF0000;
 }
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  margin-left: 20px;
+  cursor: pointer;
+}
 .ig-banner{
     z-index: 1;
     margin-top: -91px;
@@ -93,6 +126,12 @@ header{
     background-size: cover !important;
     background: url(../images/banner-image.png) no-repeat;
 }
+.ig-navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+
 .ig-banner::after{
     top: 0;
     left: 0;
